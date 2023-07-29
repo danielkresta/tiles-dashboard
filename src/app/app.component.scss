@@ -1,0 +1,36 @@
+.tiles__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 100px;
+
+  > :not(:last-child) {
+    padding-bottom: 58px;
+  }
+}
+
+.tiles__subtitle {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #9fa7bb;
+  text-transform: uppercase;
+}
+
+.tiles__title {
+  margin: 0 auto;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.24;
+  text-align: center;
+  color: #232323;
+}
+
+.tiles__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}

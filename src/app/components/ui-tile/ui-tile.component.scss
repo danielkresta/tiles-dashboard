@@ -1,0 +1,20 @@
+.ui-tile__container {
+  width: 370px;
+  height: 370px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ui-tile__text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.13;
+  text-align: center;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
