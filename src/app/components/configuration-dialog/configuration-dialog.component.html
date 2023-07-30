@@ -43,7 +43,7 @@
     </div>
   </div>
   <button
-    class="configuration-dialog__confirmation-button"
+    class="configuration-dialog__confirmation-button configuration-dialog__button--primary"
     (click)="update()"
   >
     Update
@@ -53,7 +53,7 @@
   <!-- TODO: add close icon -->
   <div class="configuration-dialog__table-header">
     <div class="configuration-dialog__table-label">Tiles</div>
-    <button class="configuration-dialog__table-add" (click)="addNewRow()">
+    <button class="configuration-dialog__table-add configuration-dialog__button--primary" (click)="addNewRow()">
       <mat-icon svgIcon="plus"></mat-icon>
       <div>Add</div>
     </button>

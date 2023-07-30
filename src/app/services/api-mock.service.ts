@@ -9,10 +9,7 @@ export class ApiMockService {
   }
 
   updateTiles(configuration: TileConfiguration[]): Observable<UpdateResponse> {
-    console.log(
-      'POST: updateTiles with configuration: ',
-      JSON.stringify(configuration)
-    );
+    console.log('POST: updateTiles with configuration: \n', configuration);
     return of({ status: 'success' });
   }
 }

@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatTable, MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
+import { cloneDeep } from "lodash"
 
 import { TileConfiguration } from '../../services/api.types';
 
@@ -23,7 +24,8 @@ export interface ConfigurationDialogArguments {
 export class ConfigurationDialog {
   private _dialogRef = inject(DialogRef<ConfigurationDialogArguments>);
   protected _data: ConfigurationDialogArguments = inject(DIALOG_DATA);
-  protected _tileConfiguration = [...this._data.tileConfiguration];
+
+  protected _tileConfiguration = cloneDeep(this._data.tileConfiguration);
 
   @ViewChild(MatTable) table?: MatTable<TileConfiguration[]>;
 
