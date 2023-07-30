@@ -33,9 +33,8 @@ export class AppComponent {
   private _sanitizer = inject(DomSanitizer);
   private _dialog = inject(Dialog);
 
-  protected readonly _dialogUpdate$ = new ReplaySubject<ConfigurationDialogArguments>(
-    1,
-  );
+  protected readonly _dialogUpdate$ =
+    new ReplaySubject<ConfigurationDialogArguments>(1);
 
   protected readonly _title$ = this._dialogUpdate$.pipe(
     map((dialogResult) => dialogResult.title),
@@ -56,7 +55,6 @@ export class AppComponent {
 
   constructor() {
     this._loadIcons();
-    this._openDialog();
   }
 
   openConfiguration(): void {
