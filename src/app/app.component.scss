@@ -34,3 +34,19 @@
   flex-wrap: wrap;
   gap: 30px;
 }
+
+.tiles__configuration {
+  width: 16px;
+  height: 16px;
+  padding: 17px;
+  border-radius: 25px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  background-color: #2f3748;
+  cursor: pointer;
+}
+
+.tiles__icon-settings {
+  // Not sure what do I have to do to align that icon properly
+  overflow: initial;
+  display: block;
+}

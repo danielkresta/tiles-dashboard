@@ -1,12 +1,12 @@
 <div class="tiles__container">
   <div class="tiles__title-container">
-    <div class="tiles__subtitle">Extra Text</div>
-    <div class="tiles__title">Get Inspired</div>
+    <div class="tiles__subtitle">{{ _subtitle$ | async }}</div>
+    <div class="tiles__title">{{ _title$ | async }}</div>
   </div>
   <div class="tiles__content">
-    <ui-tile *ngFor="let tile of tiles$ | async" [text]="tile.text" [link]="tile.link" [backgroundColor]="tile.backgroundColor" />
+    <ui-tile *ngFor="let tile of _tiles$ | async" [text]="tile.text" [link]="tile.link" [backgroundColor]="tile.backgroundColor" />
   </div>
-  <div class="tiles__configuration">
-    <!-- cogwheel icon -->
+  <div class="tiles__configuration" (click)="openConfiguration()">
+    <mat-icon class="tiles__icon-settings" svgIcon="settings" inline="true"/>
   </div>
 </div>
